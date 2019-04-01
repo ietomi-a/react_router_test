@@ -1,8 +1,10 @@
-import React from "react"
+import * as React from "react"
 
 import {
     BrowserRouter as Router,
-    Route
+    Route,
+    Switch,
+    Link
 } from "react-router-dom"
 
 
@@ -11,9 +13,9 @@ const Home = () => (
       <h1>hello my app</h1>
       <p> choose language</p>
       <ul>
-        <li><a href='/ja'> Japanese </a></li>
-        <li><a href='/en'> English </a></li>
-        <li><a href='/cn'> Chinese </a></li>
+        <li><Link to='/ja'> Japanese </Link></li>
+        <li><Link to='/en'> English </Link></li>
+        <li><Link to='/cn'> Chinese </Link></li>
       </ul>    
     </div>
 )
@@ -42,12 +44,16 @@ const HelloChinese = () => (
 
 const HelloApp = () => (
     <Router>
-      <div style={{margin: 20}}>
-        <Route exact path='/' component={Home} />
-        <Route path='/ja' component={HelloJapanese} />
-        <Route path='/en' component={HelloEnglish} />
-        <Route path='/cn' component={HelloChinese} />        
-      </div>
+    <div>
+      <h1>hello my app</h1>
+      <p> choose language</p>
+    <Switch>
+      <Route exact path='/' component={Home} />      
+      <Route path='/ja' component={HelloJapanese} />
+      <Route path='/en' component={HelloEnglish} />
+      <Route path='/cn' component={HelloChinese} />
+    </Switch>    
+    </div>
     </Router>
 )
 
