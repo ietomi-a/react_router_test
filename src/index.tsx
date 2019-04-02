@@ -1,5 +1,5 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-import HelloApp from "./HelloApp"
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import HelloApp from "./HelloApp";
 
-ReactDOM.render(<HelloApp />, document.getElementById('root'))
+ReactDOM.render(<HelloApp />, document.getElementById('root'));
