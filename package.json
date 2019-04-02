@@ -17,6 +17,7 @@
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "serve"
   }
 }

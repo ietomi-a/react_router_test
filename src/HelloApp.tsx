@@ -45,8 +45,6 @@ const HelloChinese = () => (
 const HelloApp = () => (
     <Router>
     <div>
-      <h1>hello my app</h1>
-      <p> choose language</p>
     <Switch>
       <Route exact path='/' component={Home} />      
       <Route path='/ja' component={HelloJapanese} />
