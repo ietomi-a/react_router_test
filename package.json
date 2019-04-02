@@ -17,6 +17,7 @@
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
+    "__comment": "node_modules/.bin/webpack, node_modules/.bin/serve",
     "build": "webpack",
     "start": "serve"
   }
